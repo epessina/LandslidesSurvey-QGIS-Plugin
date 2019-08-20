@@ -1,1 +1,1 @@
-# LandslidesSurvey-QGIS-Plugin
+# LandslidesSurvey QGIS Plugin
