@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LandslidesSurveryDialogBase</class>
+ <widget class="QDialog" name="LandslidesSurveryDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>324</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>453</width>
+    <height>225</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2000</width>
+    <height>2000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>LandslidesSurvey</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label_shp">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>178</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(240, 240, 240)</string>
+   </property>
+   <property name="text">
+    <string>Output Shapefile (optional):</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="outputJSON">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>109</y>
+     <width>481</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid rgb(220,220,220);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="QLineEdit" name="le_json">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>19</y>
+      <width>395</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid rgb(122, 122, 122);</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>269</y>
+     <width>167</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="dialogButtons">
+    <property name="spacing">
+     <number>7</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>14</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="btn_ok">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_close">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="outputShp">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>187</y>
+     <width>481</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid rgb(220,220,220);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="QLineEdit" name="le_shp">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>19</y>
+      <width>395</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid rgb(122, 122, 122);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_json">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(240, 240, 240)</string>
+   </property>
+   <property name="text">
+    <string>Output JSON file:</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>18</y>
+     <width>481</width>
+     <height>57</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="boundingBox">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QCheckBox" name="chb_bb">
+      <property name="text">
+       <string>Filter the points using a bounding box</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QComboBox" name="cb_bb">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="insertPolicy">
+         <enum>QComboBox::InsertAtTop</enum>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tb_bb">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select file&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Browse</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="status">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>269</y>
+     <width>301</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid rgb(220,220,220);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="QLabel" name="text_status">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>8</y>
+      <width>291</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;</string>
+    </property>
+    <property name="text">
+     <string>Compile the fields and press OK...</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_status">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>260</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(240, 240, 240)</string>
+   </property>
+   <property name="text">
+    <string>Status:</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="tb_json">
+   <property name="geometry">
+    <rect>
+     <x>435</x>
+     <y>126</y>
+     <width>55</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select file&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="tb_shp">
+   <property name="geometry">
+    <rect>
+     <x>435</x>
+     <y>204</y>
+     <width>55</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>outputJSON</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>outputShp</zorder>
+  <zorder>status</zorder>
+  <zorder>label_status</zorder>
+  <zorder>label_shp</zorder>
+  <zorder>label_json</zorder>
+  <zorder>tb_json</zorder>
+  <zorder>tb_shp</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>chb_bb</tabstop>
+  <tabstop>tb_bb</tabstop>
+  <tabstop>btn_ok</tabstop>
+  <tabstop>btn_close</tabstop>
+  <tabstop>cb_bb</tabstop>
+  <tabstop>le_json</tabstop>
+  <tabstop>le_shp</tabstop>
+  <tabstop>chb_bb</tabstop>
+  <tabstop>cb_bb</tabstop>
+  <tabstop>tb_bb</tabstop>
+  <tabstop>le_shp</tabstop>
+  <tabstop>btn_ok</tabstop>
+  <tabstop>btn_close</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
