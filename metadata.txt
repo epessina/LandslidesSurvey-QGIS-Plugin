@@ -1,4 +1,10 @@
-# Mandatory items:
+# This file contains metadata for your plugin. Since
+# version 2.0 of QGIS this is the proper way to supply
+# information about a plugin. The old method of
+# embedding metadata in __init__.py will
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
 
 [general]
 name=LandslidesSurvey
@@ -8,19 +14,17 @@ version=1.0.0
 author=Edoardo Pessina
 email=edoardo2.pessina@mail.polimi.it
 
-about= This QGIS plugin allows to retrieve all the data inserted through the smartphone application LandslidesSurvey
-       (https://github.com/epessina/LandslidesSurvey). The data can be filtered using a vector layer and downloaded both
-        in JSON format and as a Shapefile.
+about=This QGIS plugin allows to retrieve all the data inserted through the smartphone application LandslidesSurvey (https://github.com/epessina/LandslidesSurvey). The data can be filtered using a vector layer and downloaded both in JSON format and as a Shapefile.
 
 tracker=https://github.com/epessina/LandslidesSurvey-QGIS-Plugin/issues
 repository=https://github.com/epessina/LandslidesSurvey-QGIS-Plugin
-
 # End of mandatory metadata
 
 # Recommended items:
 
 hasProcessingProvider=no
 
+# Uncomment the following line and add your changelog:
 # changelog=
 
 tags=QGIS3, landslides, LandslidesSurvey, Polimi
@@ -28,14 +32,8 @@ tags=QGIS3, landslides, LandslidesSurvey, Polimi
 homepage=https://github.com/epessina/LandslidesSurvey-QGIS-Plugin
 category=Plugins
 icon=icon.png
+# experimental flag
 experimental=True
 
+# deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
-
-# plugin_dependencies=
-
-Category of the plugin: Raster, Vector, Database or Web
-category=Web
-
-# If the plugin can run on QGIS Server.
-server=False

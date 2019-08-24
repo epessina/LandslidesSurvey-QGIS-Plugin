@@ -489,8 +489,10 @@ class LandslidesSurvey(QObject):
                 # Create a feature
                 fet = QgsFeature()
 
+                pnt = QgsGeometry.fromPoint(QgsPoint(ls["coordinates"][1], ls["coordinates"][0]))
+
                 # Set the geometry type and the coordinates of the feature
-                fet.setGeometry(QgsPoint(ls["coordinates"][1], ls["coordinates"][0]))
+                fet.setGeometry(pnt)
 
                 # Set the attributes of the feature
                 fet.setAttributes([
