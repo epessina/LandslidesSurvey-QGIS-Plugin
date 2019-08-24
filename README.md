@@ -13,11 +13,17 @@ The data can be filtered by the user using a vector layer and can be downloaded 
 
 ## Installation
 
+The plugin works with any version of QGIS 3 and does not require any additional dependency.
 
+1. Download [LandslidesSurvey-x.x.x.zip](https://github.com/epessina/LandslidesSurvey-QGIS-Plugin/releases)
+2. Open QGIS.
+3. Navigate to `Plugins > Manage and Install Plugins...`.
+4. Open the tab `Install from ZIP`.
+5. Select the previously downloaded zip file and click on `Install Plugin`.
+6. Done!
 
-## Usage
-
-
+If the plugin does not appears automatically on the toolbar, navigate to `Plugins > Manage and Install Plugins... > 
+Installed` and make sure that the checkbox beside LandslidesSurvey is checked.
 
 
 ## License
