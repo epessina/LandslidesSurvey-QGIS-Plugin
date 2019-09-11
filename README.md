@@ -7,7 +7,7 @@
 LandslidesSurvey QGIS Plugin is a plugin for QGIS 3 developed to easily retrieve all the data inserted through the
 smartphone application [LandslidesSurvey](https://github.com/epessina/LandslidesSurvey). 
 
-The plugin call the open RESTFul API of LandslidesSurvey and queries the database for all the landslides inserted.
+The plugin calls the open RESTFul API of LandslidesSurvey and queries the database for all the landslides inserted.
 The data can be filtered by the user using a vector layer and can be downloaded both in JSON format and as a Shapefile.
 
 
