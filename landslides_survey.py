@@ -45,7 +45,7 @@ class LandslidesSurvey(QObject):
     """ QGIS Plugin Implementation. """
 
     # URL of the database
-    DB_URL = "https://landslide-survey.herokuapp.com/"
+    DB_URL = "https://mhyconos.como.polimi.it/"
 
     # Create a new signal
     all_done = pyqtSignal()
